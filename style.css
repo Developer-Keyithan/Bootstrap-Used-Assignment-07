@@ -29,7 +29,6 @@ body {
 }
 
 /* Navigation Bar */
-
 .navbar {
     width: 75vw !important;
     background-color: var(--bg-odd) !important;
