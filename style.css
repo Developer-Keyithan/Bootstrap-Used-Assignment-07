@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    font-family: Poppins;
+
+    --medium: 3vw;
+    --small: 1.5vw;
+    --middle: 2vw;
+
+    --bg-odd: #47321a;
+    --bg-even: #37230a;
+    --add: #c8914b;
+    --footer : #9b7c39;
+
+
+    color: white;
+    line-height: 25px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+    scroll-padding-top: 4vw;
+}
+
+body {
+    background: url(https://cdn.pixabay.com/photo/2022/04/11/16/29/coffee-beans-7126154_1280.jpg) !important;
+    backdrop-filter: blur(5px);
+}
+
+/* Navigation Bar */
+
+.navbar {
+    width: 75vw !important;
+    background-color: var(--bg-odd) !important;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-size: xx-large !important;
+}
+
+.nav-item .nav-link {
+    color: white;
+    transition: 0.6s;
+    border-radius: 30px !important;
+    padding: 8px 20px !important;
+    font-weight: 500;
+    &:hover {
+        background-color: var(--add);
+        border: none;
+        color: black;
+        transform: scale(1.2);
+    }
+}
+
+/* Hero Section */
+.content-home {
+    width: 75vw !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: var(--bg-even);
+
+    .box-container {
+        padding-left: 150px !important;
+    }
+}
+
+.box-container2 {
+    height: 50vh;
+
+    .img-home{
+        height: 100%;
+        transition: 0.6s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.home-heading {
+    color: var(--add);
+}
+
+.box-container {
+    h2 {
+    font-size: 40px;
+    }
+
+    .btn-home {
+        width: 50%;
+        .btn {
+            border-radius: 50px;
+            padding: 10px 20px;
+            transition: 0.6s;
+            &:hover {
+                justify-content: center;
+                transform: scale(1.2);
+                background-color: var(--add);
+                border: var(--add);
+                color: black;
+            }
+        }
+    }
+}
+
+/* About Us Section */
+
+.span {
+    background-color: var(--add);
+    height: 10px;
+    width: 80px;
+    border-radius: 5px
+}
+
+.about-us{
+    width: 75vw;
+    background-color: var(--bg-odd);
+    padding: 40px 0;
+
+    .content-about {
+        padding-right: 150px !important;
+    }
+
+    .img-about {
+        transition: 0.6s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+/* Menu Section */
+
+.menu {
+    background-color: var(--bg-even);
+    width: 75vw;
+
+    .menu-items {
+        width: 100%;
+        .food {
+            transition: 0.6s;
+            width: calc(100%/3);
+            height: fit-content;
+            margin-bottom: 80px;
+            .menu-img {
+                height: 250px !important;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+/* Brand Section */
+.brand {
+    background-color: white;
+    width: 75vw;
+
+    .brand-heading {
+        color: black;
+    }
+    
+    .brand-images {
+        .brand-img {
+            width: calc(100%/5);
+            transition: 0.6s;
+            &:hover {
+                transform: scale(1.1);
+                opacity: 100% !important;
+            }
+        }
+    }
+}
+
+/* Gallery Section */
+.gallery {
+    background-color: var(--bg-odd);
+    width: 75vw;
+
+    .gallery-images {
+        .gallery-img {
+            width: 23%;
+            margin: 10px;
+            transition: 0.6s;
+            border-radius: 10px !important;
+            padding: 0 !important;
+            &:hover {
+                transform: scale(1.12);
+                box-shadow: 0 0 20px var(--add);
+                z-index: 2;
+            }
+        }
+    }
+}
+
+/* Contact Section */
+.contact {
+    background-color: var(--bg-even);
+    width: 75vw;
+
+    .contact-content {
+        width: 100%;
+        padding: 0 100px !important;
+
+        .contact-discription {
+            transition: 0.6s;
+            &:hover {
+                transform: scale(1.1);
+                color: var(--add);
+            }
+        }
+
+        .form {
+            width: 400px;
+            padding: 6px 15px;
+            border-radius: 3px;
+            outline: none;
+            border: none;
+            transition: 0.6s;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        .form-btn {
+            background-color: var(--bg-odd);
+            color: white;
+            border-radius: 30px;
+            padding: 8px 20px !important;
+            transition: 0.6s;
+            &:hover {
+                transform: scale(1.2);
+                background-color: var(--add);
+                border: var(--add);
+                color: black;
+            }
+        }
+    }
+}
+
+/* Footer Section */
+.footer {
+    background-color: var(--footer);
+    width: 75vw;
+    p {
+        color: var(--bg-even);
+    }
+}
+
+::-webkit-scrollbar {
+    background: var(--bg-even);
+    width: 0.5vw;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--add);
+    border-radius: 1vw;
+    visibility: hidden;
+}
+
+:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
